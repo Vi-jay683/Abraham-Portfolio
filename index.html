@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abraham - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    
+   
+
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Abraham Portfolio</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+  
+    <section id="home" class="hero animate-on-scroll">
+        <div class="hero-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Arockia Abraham M</span>
+                </h1>
+                <div class="hero-subtitle">
+                    I'm a <span id="typing-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate developer creating amazing digital experiences with modern web technologies. 
+                    Ready to bring innovative ideas to life through clean, efficient code.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="downloadResume()">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d=""/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Download Resume
+                    </button>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+            <div class="scroll-indicator" onclick="scrollToSection('about')">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="about" class="about animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! I'm a passionate <span class="text-violet">Web Developer</span></h3>
+                    <p>
+                        I'm a dedicated developer with a passion for creating innovative and user-friendly web applications. 
+                        With expertise in modern technologies and a keen eye for design, I bring ideas to life through clean, 
+                        efficient code and stunning visual experiences.
+                    </p>
+                    <p>
+                        My journey in web development started recently, and since then I've been constantly learning 
+                        and evolving with the latest technologies and best practices in the industry. I love building 
+                        websites that not only look great but also provide excellent user experiences.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>5+</h4>
+                            <p>Projects Built</p>
+                        </div>
+                        <div class="stat">
+                            <h4>Fresh</h4>
+                            <p>& Enthusiastic</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Dedication</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="WhatsApp Image 2025-11-04 at 20.30.55_4dc9b1cf.jpg" alt="Developer" />
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">💻</div>
+                            <span>Clean Code Enthusiast</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🎨</div>
+                            <span>UI/UX Focused</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">💡</div>
+                            <span>Problem Solver</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="education" class="education animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey and learning path</p>
+            </div>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3>Bachelor of Business Administration </h3>
+                            <span class="education-period">2024 - 2025</span>
+                        </div>
+                        <h4>Maharaja’s college</h4>
+                        <p class="education-location">📍 Mysore, Karnataka</p>
+                        <p class="education-description">
+                            Focused on web development, data structures and algorithms.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">📚</div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3>PUC </h3>
+                            <span class="education-period">2019 - 2020</span>
+                        </div>
+                        <h4>K H Patil Pu College </h4>
+                        <p class="education-location">📍 Mysore, Karnataka</p>
+                        <p class="education-description">
+                            Science stream with Mathematics, Physics, and Chemistry.
+                        </p>
+                      
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">📖</div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3>High School </h3>
+                            <span class="education-period">2016 - 2017</span>
+                        </div>
+                        <h4>St. Ann’s High School</h4>
+                        <p class="education-location">📍 Mysore, Karnataka</p>
+                        <p class="education-description">
+                            Completed with excellent grades in all subjects.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="skills" class="skills animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="95">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring-circle" stroke="#e5e7eb" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                <circle class="progress-ring-progress" stroke="url(#gradient1)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            </svg>
+                            <div class="progress-text">95%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="90">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS3</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring-circle" stroke="#e5e7eb" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                <circle class="progress-ring-progress" stroke="url(#gradient2)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            </svg>
+                            <div class="progress-text">90%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="80">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring-circle" stroke="#e5e7eb" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                <circle class="progress-ring-progress" stroke="url(#gradient3)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            </svg>
+                            <div class="progress-text">80%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="skill-card" data-skill="80">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>Python</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring-circle" stroke="#e5e7eb" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                <circle class="progress-ring-progress" stroke="url(#gradient4)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            </svg>
+                            <div class="progress-text">80%</div>
+                        </div>
+                    </div>
+                </div>
+               
+                
+                
+                <div class="skill-card" data-skill="85">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>SQL</h3>
+                    <div class="skill-progress">
+                        <div class="progress-circle">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring-circle" stroke="#e5e7eb" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                <circle class="progress-ring-progress" stroke="url(#gradient7)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            </svg>
+                            <div class="progress-text">85%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      
+        <svg width="0" height="0">
+            <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient6" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient7" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </section>
+
+    <section id="services" class="services animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">What I can do for you</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Fullstack Developer</h3>
+                    <p>Complete web application development from frontend to backend, including database design and API integration.</p>
+                    <ul class="service-features">
+                        <li>Frontend Development</li>
+                        <li>Backend Development</li>
+                        <li>Database Design</li>
+                        <li>API Integration</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Frontend Developer</h3>
+                    <p>Creating beautiful, responsive, and interactive user interfaces with modern frameworks and technologies.</p>
+                    <ul class="service-features">
+                        <li>React.js Development</li>
+                        <li>Responsive Design</li>
+                        <li>UI/UX Implementation</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Developer</h3>
+                    <p>Building modern websites and web applications with clean code, responsive, best practices, and latest technologies.</p>
+                    <ul class="service-features">
+                        <li>Custom Websites</li>
+                        <li>E-commerce Solutions</li>
+                        <li>CMS Development</li>
+                        <li>Website Maintenance</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="projects" class="projects animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Some of my recent work and personal projects</p>
+            </div>
+            <div class="projects-grid">
+               
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1653361860636-36f2fb89eab9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FsY3VsYXRvcnN8ZW58MHx8MHx8fDA%3D" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://vija-y28.github.io/Calculator-App/" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculator App</h3>
+                        <p>A simple and responsive web-based calculator for performing basic arithmetic operations with an interactive UI.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwcmVudGFsfGVufDB8fDB8fHww" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://vijaytravelwebsite.netlify.app/" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Car Rental Website</h3>
+                        <p>A fully responsive website built using only HTML and CSS to showcase rental cars and provide a visually appealing user interface.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1670076513880-f58e3c377903?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://vijaytravelwebsite.netlify.app/" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                                <a href="" class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Furniture Website</h3>
+                        <p>A modern and elegant furniture website featuring smooth animations, attractive layouts, and an interactive product showcase.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+
+                        </div>
+                    </div>
+                </div>
+                
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="contact" class="contact animate-on-scroll">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Let's connect and work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Get In Touch</h3>
+                        <p>I'm always excited to work on new projects and collaborate with amazing people. 
+                        Feel free to reach out if you have any questions or just want to say hello!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>arockiaabraham293@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+91 9019212449</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Martalli (p), Sandanapalayam (v), Karnataka, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <div class="social-card">
+                        <h3>Connect With Me</h3>
+                        <p>Follow me on social media for updates on my latest projects and tech insights.</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/arockia-abraham-m-42635b241/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link linkedin">
+                                <div class="social-icon"><i class="fa-brands fa-linkedin"></i></div>
+                                <h4>LinkedIn</h4>
+                            </a>
+                            <a href="https://www.facebook.com/share/19zr8SoHAP/" target="_blank" class="social-link facebook">
+                                <div class="social-icon"><i class="fa-brands fa-square-facebook"></i></div>
+                                <h4>Facebook</h4>
+                            </a>
+                            <a href=" https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=k8zyrbe " target="_blank" class="social-link instagram">
+                                <div class="social-icon"><i class="fa-brands fa-square-instagram"></i></div>
+                                <h4>Instagram</h4>
+                            </a>
+                            <a href="https://www.youtube.com/@Abraham_2449" target="_blank" class="social-link whatsapp">
+                                <div class="social-icon"><i class="fa-brands fa-youtube"></i></div>
+                                <h4>Youtube</h4>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3> Abraham's Portfolio</h3>
+                    <p>Passionate web developer creating amazing digital experiences with modern technologies. 
+                    Always ready to take on new challenges and build innovative solutions.</p>
+                    <div class="footer-love">
+                        <span>Made with ❤️ by Abraham</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <div class="footer-nav">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#education">Education</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#services">Services</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact-info">
+                        <p>📧arockiaabraham293@gmail.com</p>
+                        <p>📱 +91-9019212449</p>
+                        <p>📍 Martalli (p), Sandanapalayam (v), Karnataka, India</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    
+                </div>
+                <button class="scroll-to-top" onclick="scrollToTop()">
+                    ⬆️
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
